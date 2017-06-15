@@ -3,6 +3,58 @@
         "branch": "master",
         "commit_author": "Christian Lieven",
         "commit_hash": "3f4665356a24d76a9461043f62a2b12dab56c75f",
+<<<<<<< HEAD
+        "platform": "darwin",
+        "python_environment": [
+            "widgetsnbextension==2.0.0",
+            "whichcraft==0.4.1",
+            "wheel==0.29.0",
+            "webencodings==0.5.1",
+            "wcwidth==0.1.7",
+            "watchdog==0.8.3",
+            "virtualenv==15.1.0",
+            "vega==0.4.4",
+            "travis-encrypt==0.4.6",
+            "traitlets==4.3.2",
+            "tox==2.5.0",
+            "tornado==4.4.2",
+            "toolz==0.8.2",
+            "testpath==0.3",
+            "terminado==0.6",
+            "tabulate==0.7.7",
+            "sympy==1.0",
+            "swiglpk==1.4.3",
+            "Sphinx==1.5.2",
+            "snowballstemmer==1.2.1",
+            "smmap2==2.0.1",
+            "six==1.10.0",
+            "singledispatch==3.4.0.3",
+            "simplegeneric==0.8.1",
+            "setuptools==34.3.2",
+            "scipy==0.18.1",
+            "scandir==1.5",
+            "ruamel.yaml==0.14.11",
+            "ruamel.ordereddict==0.4.9",
+            "requests==2.13.0",
+            "qtconsole==4.3.0",
+            "pyzmq==16.0.2",
+            "PyYAML==3.12",
+            "pytz==2017.2",
+            "python-libsbml==5.13.0",
+            "python-dateutil==2.6.0",
+            "pytest==3.0.7",
+            "pytest-cov==2.4.0",
+            "pyparsing==2.2.0",
+            "Pygments==2.2.0",
+            "pyflakes==1.3.0",
+            "pydocstyle==1.1.1",
+            "pycparser==2.17",
+            "pycodestyle==2.2.0",
+            "pyasn1==0.2.2",
+            "py==1.4.33",
+            "ptyprocess==0.5.1",
+            "prompt-toolkit==1.0.13",
+=======
         "platform": "linux",
         "python_environment": [
             "whichcraft==0.4.1",
@@ -28,11 +80,70 @@
             "py==1.4.33",
             "ptyprocess==0.5.1",
             "prompt-toolkit==1.0.14",
+>>>>>>> 179bbee9efdca88dab9b4b35971fd6d3d87a94ce
             "poyo==0.4.1",
             "pluggy==0.4.0",
             "pip==9.0.1",
             "pickleshare==0.7.4",
             "pexpect==4.2.1",
+<<<<<<< HEAD
+            "pathtools==0.1.2",
+            "pathlib2==2.2.1",
+            "pandocfilters==1.4.1",
+            "pandas==0.20.1",
+            "palettable==2.1.1",
+            "packaging==16.8",
+            "ordered-set==2.0.1",
+            "optlang==1.1.5",
+            "numpy==1.12.1",
+            "numexpr==2.6.2",
+            "notebook==5.0.0",
+            "networkx==1.11",
+            "nbformat==4.3.0",
+            "nbconvert==5.1.1",
+            "mpmath==0.19",
+            "mistune==0.7.4",
+            "memote==0.2.3",
+            "mccabe==0.5.3",
+            "MarkupSafe==1.0",
+            "lazy-object-proxy==1.2.2",
+            "jupyter==1.0.0",
+            "jupyter-core==4.3.0",
+            "jupyter-console==5.1.0",
+            "jupyter-client==5.0.1",
+            "jsonschema==2.5.1",
+            "Jinja2==2.9.6",
+            "jinja2-time==0.2.0",
+            "jinja2-ospath==0.2.1",
+            "ipywidgets==6.0.0",
+            "ipython==5.3.0",
+            "ipython-genutils==0.2.0",
+            "ipykernel==4.6.0",
+            "IProgress==0.4",
+            "ipaddress==1.0.18",
+            "inspyred==1.0.1",
+            "imagesize==0.7.1",
+            "idna==2.2",
+            "html5lib==0.999999999",
+            "GitPython==2.1.3",
+            "gitdb2==2.0.0",
+            "future==0.16.0",
+            "functools32==3.2.3.post2",
+            "flake8==3.2.1",
+            "Escher==1.5.0",
+            "enum34==1.1.6",
+            "entrypoints==0.2.2",
+            "docutils==0.13.1",
+            "decorator==4.0.11",
+            "dask==0.14.3",
+            "cryptography==1.7.1",
+            "coverage==4.3.4",
+            "cookiecutter==1.5.1",
+            "configparser==3.5.0",
+            "colorama==0.3.7",
+            "codecov==2.0.5",
+            "cobra==0.6.1",
+=======
             "pbr==1.10.0",
             "pandas==0.19.2",
             "packaging==16.8",
@@ -58,20 +169,119 @@
             "configparser==3.5.0",
             "colorama==0.3.9",
             "cobra==0.6.0a7",
+>>>>>>> 179bbee9efdca88dab9b4b35971fd6d3d87a94ce
             "cloudpickle==0.2.2",
             "click==6.7",
             "click-configfile==0.2.2",
             "chardet==3.0.2",
+<<<<<<< HEAD
+            "cffi==1.9.1",
+            "certifi==2017.1.23",
+            "cameo==0.8.0",
+            "bumpversion==0.5.3",
+            "blessings==1.6",
+            "bleach==2.0.0",
+            "binaryornot==0.4.3",
+            "backports.shutil-get-terminal-size==1.0.0",
+            "backports-abc==0.5",
+            "Babel==2.3.4",
+            "arrow==0.10.0",
+            "argh==0.26.2",
+            "appnope==0.1.0",
+            "appdirs==1.4.3",
+            "altair==1.2.0",
+            "alabaster==0.7.9",
+            "plotly==2.0.8"
+        ],
+        "python_version": "2.7.10 (default, Jul 14 2015, 19:46:27) \n[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.39)]",
+=======
             "binaryornot==0.4.3",
             "arrow==0.10.0",
             "appdirs==1.4.3",
             "altair==1.2.0"
         ],
         "python_version": "3.5.2 (default, Jan 17 2017, 02:57:44) \n[GCC 4.6.3]",
+>>>>>>> 179bbee9efdca88dab9b4b35971fd6d3d87a94ce
         "timestamp": "2017-05-03 18:26:11+02:00"
     },
     "report": {
         "test_basic": {
+<<<<<<< HEAD
+            "metabolites_no_formula": [],
+            "model_id": "e_coli_core",
+            "num_genes": 137,
+            "num_metabolites": 72,
+            "num_reactions": 95
+        },
+        "test_biomass": {
+            "biomass_default_flux": [
+                0.87392150696842785
+            ],
+            "biomass_reactions": [
+                "BIOMASS_Ecoli_core_w_GAM"
+            ],
+            "biomass_sum": [
+                1.5407661664547008
+            ],
+            "default_blocked_precursors": [
+                [
+                    "nadph_c",
+                    "atp_c",
+                    "accoa_c",
+                    "nad_c"
+                ]
+            ],
+            "open_blocked_precursors": [
+                [
+                    "nadph_c",
+                    "nad_c"
+                ]
+            ]
+        },
+        "test_consistency": {
+            "blocked_reactions": [],
+            "imbalanced_reactions": [],
+            "is_consistent": true,
+            "magic_atp_production": false,
+            "unconserved_metabolites": []
+        },
+        "test_syntax": {
+            "non_cytosolic": [
+                "e"
+            ],
+            "reaction_compartment_suffix": [
+                [
+                    "ATPS4r",
+                    "CYTBD",
+                    "FRUpts2",
+                    "GLCpts",
+                    "NADH16",
+                    "THD2"
+                ]
+            ],
+            "reaction_metabolite_compartment": [
+                []
+            ],
+            "untagged_abc_transport": [],
+            "untagged_demand": [
+                "EX_pyr_e",
+                "EX_lac__D_e",
+                "EX_etoh_e",
+                "EX_fum_e",
+                "EX_for_e",
+                "EX_fru_e",
+                "EX_glu__L_e",
+                "EX_ac_e",
+                "EX_succ_e",
+                "EX_gln__L_e",
+                "EX_mal__L_e",
+                "EX_akg_e",
+                "EX_acald_e"
+            ],
+            "untagged_exchange": [],
+            "untagged_normal_transport": [],
+            "uppercase_metabolites": []
+=======
             "model_id": "e_coli_core",
             "num_genes": 137,
             "num_metabolites": 72,
@@ -81,6 +291,7 @@
         "test_consistency": {
             "is_consistent": true,
             "unconserved_metabolites": []
+>>>>>>> 179bbee9efdca88dab9b4b35971fd6d3d87a94ce
         }
     }
 }
