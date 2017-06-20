@@ -12,7 +12,9 @@
         <title>iJO1366, iAF1260, iJR904, e_coli_core Report</title>
         <meta name="description" content="">
         <script src="https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
-<script src="https://cdn.plot.ly/plotly-1.26.1.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-1.26.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.5/d3.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body ng-app="memoteReport" ng-cloak>
 
@@ -59,7 +61,9 @@
                            Genes
                         </md-tab-label>
                         <md-tab-body>
-                            <div id="2466d3f1-537d-4485-919f-6767ca570607" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("2466d3f1-537d-4485-919f-6767ca570607", [{"type": "scatter", "y": [137, 904, 1261, 1367], "x": ["2017-05-03 14:19:01", "2017-05-03 16:46:47", "2017-05-03 16:58:28", "2017-05-03 17:10:46"]}], {"height": 500, "width": 650, "yaxis": {"title": "Number of Genes"}, "xaxis": {"tickangle": 0, "title": "Timestamp", "zeroline": true}}, {"linkText": "", "showLink": false})</script>
+                            <div id="plotDiv" style="width: 500px; height: 500px">
+                                <div id="f6ee185a-b42a-44a7-86c0-1b1d0bbb0566" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("f6ee185a-b42a-44a7-86c0-1b1d0bbb0566", [{"y": [137, 904, 1261, 1367], "x": ["2017-05-03 14:19:01", "2017-05-03 16:46:47", "2017-05-03 16:58:28", "2017-05-03 17:10:46"], "type": "scatter"}], {"width": 650, "height": 500, "xaxis": {"title": "Timestamp", "tickangle": 0, "zeroline": true}, "yaxis": {"title": "Number of Genes"}}, {"showLink": false, "linkText": ""})</script>
+                            </div>
                         </md-tab-body>
                     </md-tab>
                     <md-tab id="tab_1">
@@ -67,7 +71,7 @@
                            Reactions
                         </md-tab-label>
                         <md-tab-body>
-                            <div id="509ce539-4514-4b02-af1c-5cba316a78f9" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("509ce539-4514-4b02-af1c-5cba316a78f9", [{"type": "scatter", "y": [95, 1075, 2382, 2583], "x": ["2017-05-03 14:19:01", "2017-05-03 16:46:47", "2017-05-03 16:58:28", "2017-05-03 17:10:46"]}], {"height": 500, "width": 650, "yaxis": {"title": "Number of Reactions"}, "xaxis": {"tickangle": 0, "title": "Timestamp", "zeroline": true}}, {"linkText": "", "showLink": false})</script>
+                            <div id="2e6ef0b7-9874-4f87-9174-913a79bc80ca" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("2e6ef0b7-9874-4f87-9174-913a79bc80ca", [{"y": [95, 1075, 2382, 2583], "x": ["2017-05-03 14:19:01", "2017-05-03 16:46:47", "2017-05-03 16:58:28", "2017-05-03 17:10:46"], "type": "scatter"}], {"width": 650, "height": 500, "xaxis": {"title": "Timestamp", "tickangle": 0, "zeroline": true}, "yaxis": {"title": "Number of Reactions"}}, {"showLink": false, "linkText": ""})</script>
                         </md-tab-body>
                     </md-tab>
                     <md-tab id="tab_2">
@@ -75,7 +79,7 @@
                            Metabolites
                         </md-tab-label>
                         <md-tab-body>
-                            <div id="5bbb1b22-c656-4576-ab09-aa3617a003f2" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("5bbb1b22-c656-4576-ab09-aa3617a003f2", [{"type": "scatter", "y": [72, 761, 1668, 1805], "x": ["2017-05-03 14:19:01", "2017-05-03 16:46:47", "2017-05-03 16:58:28", "2017-05-03 17:10:46"]}], {"height": 500, "width": 650, "yaxis": {"title": "Number of Metabolites"}, "xaxis": {"tickangle": 0, "title": "Timestamp", "zeroline": true}}, {"linkText": "", "showLink": false})</script>
+                            <div id="4f0e3721-dd90-4271-b153-af2324f859dd" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("4f0e3721-dd90-4271-b153-af2324f859dd", [{"y": [72, 761, 1668, 1805], "x": ["2017-05-03 14:19:01", "2017-05-03 16:46:47", "2017-05-03 16:58:28", "2017-05-03 17:10:46"], "type": "scatter"}], {"width": 650, "height": 500, "xaxis": {"title": "Timestamp", "tickangle": 0, "zeroline": true}, "yaxis": {"title": "Number of Metabolites"}}, {"showLink": false, "linkText": ""})</script>
                         </md-tab-body>
                     </md-tab>
                     <md-tab id="tab_3">
@@ -83,7 +87,7 @@
                            Metabolites no formula
                         </md-tab-label>
                         <md-tab-body>
-                            <div id="dc9adc25-1e4a-4b5f-b21f-d10c79332e38" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("dc9adc25-1e4a-4b5f-b21f-d10c79332e38", [{"type": "scatter", "y": [0, 0, 0, 0], "x": ["2017-05-03 14:19:01", "2017-05-03 16:46:47", "2017-05-03 16:58:28", "2017-05-03 17:10:46"]}], {"height": 500, "width": 650, "yaxis": {"title": "Number of Metabolites Without Formula"}, "xaxis": {"tickangle": 0, "title": "Timestamp", "zeroline": true}}, {"linkText": "", "showLink": false})</script>
+                            <div id="febf4856-4f98-4f9c-bdcf-df0c92ede3db" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("febf4856-4f98-4f9c-bdcf-df0c92ede3db", [{"y": [0, 0, 0, 0], "x": ["2017-05-03 14:19:01", "2017-05-03 16:46:47", "2017-05-03 16:58:28", "2017-05-03 17:10:46"], "type": "scatter"}], {"width": 650, "height": 500, "xaxis": {"title": "Timestamp", "tickangle": 0, "zeroline": true}, "yaxis": {"title": "Number of Metabolites Without Formula"}}, {"showLink": false, "linkText": ""})</script>
                         </md-tab-body>
                     </md-tab>
                 </md-tabs>
@@ -108,7 +112,9 @@
                         </md-tab-label>
                         <md-tab-body>
                             <md-content>
-                                <div id="7b0d62d1-f5c1-4366-b76e-0a5852c168da" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("7b0d62d1-f5c1-4366-b76e-0a5852c168da", [{"type": "scatter", "name": "BIOMASS_Ecoli", "y": [1.0927068125342176], "x": ["2017-05-03 16:46:47"]}, {"type": "scatter", "name": "BIOMASS_Ec_iJO1366_WT_53p95M", "y": [0.9996577560637648], "x": ["2017-05-03 17:10:46"]}, {"type": "scatter", "name": "BIOMASS_Ec_iJO1366_core_53p95M", "y": [0.9999944937220143], "x": ["2017-05-03 17:10:46"]}, {"type": "scatter", "name": "BIOMASS_Ecoli_core_w_GAM", "y": [1.5407661664547037], "x": ["2017-05-03 14:19:01"]}, {"type": "scatter", "name": "BIOMASS_Ec_iAF1260_core_59p81M", "y": [0.9980575538026564], "x": ["2017-05-03 16:58:28"]}], {"height": 500, "width": 650, "yaxis": {"title": "$ \\text{Sum of Biomass Components }[ \\text{mmol} \\text{g}_{\\text{DW}}^{-1}  \\text{h}^{-1} ] $"}, "xaxis": {"tickangle": 0, "title": "Timestamp", "zeroline": true}}, {"linkText": "", "showLink": false})</script>
+                                <div id="plot">
+                                    <div id="0bb60d49-1ddd-4f03-9120-f4cde841f7d7" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("0bb60d49-1ddd-4f03-9120-f4cde841f7d7", [{"y": [1.0927068125342176], "x": ["2017-05-03 16:46:47"], "name": "BIOMASS_Ecoli", "type": "scatter"}, {"y": [0.9996577560637648], "x": ["2017-05-03 17:10:46"], "name": "BIOMASS_Ec_iJO1366_WT_53p95M", "type": "scatter"}, {"y": [0.9999944937220143], "x": ["2017-05-03 17:10:46"], "name": "BIOMASS_Ec_iJO1366_core_53p95M", "type": "scatter"}, {"y": [1.5407661664547037], "x": ["2017-05-03 14:19:01"], "name": "BIOMASS_Ecoli_core_w_GAM", "type": "scatter"}, {"y": [0.9980575538026564], "x": ["2017-05-03 16:58:28"], "name": "BIOMASS_Ec_iAF1260_core_59p81M", "type": "scatter"}], {"width": 650, "height": 500, "xaxis": {"title": "Timestamp", "tickangle": 0, "zeroline": true}, "yaxis": {"title": "$ \\text{Sum of Biomass Components }[ \\text{mmol} \\text{g}_{\\text{DW}}^{-1}  \\text{h}^{-1} ] $"}}, {"showLink": false, "linkText": ""})</script>
+                                </div>
                             </md-content>
                         </md-tab-body>
                     </md-tab>
@@ -117,7 +123,7 @@
                            Biomass Default Flux
                         </md-tab-label>
                         <md-tab-body>
-                            <div id="51073fc9-e64a-4337-89b1-6351a235a720" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("51073fc9-e64a-4337-89b1-6351a235a720", [{"type": "scatter", "name": "BIOMASS_Ecoli", "y": [0.921948095050472], "x": ["2017-05-03 16:46:47"]}, {"type": "scatter", "name": "BIOMASS_Ec_iJO1366_WT_53p95M", "y": [0.9865144469529663], "x": ["2017-05-03 17:10:46"]}, {"type": "scatter", "name": "BIOMASS_Ec_iJO1366_core_53p95M", "y": [0.9823718127269843], "x": ["2017-05-03 17:10:46"]}, {"type": "scatter", "name": "BIOMASS_Ecoli_core_w_GAM", "y": [0.8739215069684279], "x": ["2017-05-03 14:19:01"]}, {"type": "scatter", "name": "BIOMASS_Ec_iAF1260_core_59p81M", "y": [0.7367009388648683], "x": ["2017-05-03 16:58:28"]}], {"height": 500, "width": 650, "yaxis": {"title": "$ \\text{Biomass Flux }[ \\text{mmol} \\text{g}_{\\text{DW}}^{-1}  \\text{h}^{-1} ] $"}, "xaxis": {"tickangle": 0, "title": "Timestamp", "zeroline": true}}, {"linkText": "", "showLink": false})</script>
+                            <div id="bb78d8ed-f19a-48e7-9213-bfebec88fd9b" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("bb78d8ed-f19a-48e7-9213-bfebec88fd9b", [{"y": [0.921948095050472], "x": ["2017-05-03 16:46:47"], "name": "BIOMASS_Ecoli", "type": "scatter"}, {"y": [0.9865144469529663], "x": ["2017-05-03 17:10:46"], "name": "BIOMASS_Ec_iJO1366_WT_53p95M", "type": "scatter"}, {"y": [0.9823718127269843], "x": ["2017-05-03 17:10:46"], "name": "BIOMASS_Ec_iJO1366_core_53p95M", "type": "scatter"}, {"y": [0.8739215069684279], "x": ["2017-05-03 14:19:01"], "name": "BIOMASS_Ecoli_core_w_GAM", "type": "scatter"}, {"y": [0.7367009388648683], "x": ["2017-05-03 16:58:28"], "name": "BIOMASS_Ec_iAF1260_core_59p81M", "type": "scatter"}], {"width": 650, "height": 500, "xaxis": {"title": "Timestamp", "tickangle": 0, "zeroline": true}, "yaxis": {"title": "$ \\text{Biomass Flux }[ \\text{mmol} \\text{g}_{\\text{DW}}^{-1}  \\text{h}^{-1} ] $"}}, {"showLink": false, "linkText": ""})</script>
                         </md-tab-body>
                     </md-tab>
                     <md-tab id="tab_2">
@@ -125,7 +131,7 @@
                            Num Default Blocked Precursors
                         </md-tab-label>
                         <md-tab-body>
-                            <div id="75ff4302-f844-4b05-9b2c-57c4ae52f589" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("75ff4302-f844-4b05-9b2c-57c4ae52f589", [{"type": "scatter", "name": "BIOMASS_Ecoli", "y": [0], "x": ["2017-05-03 16:46:47"]}, {"type": "scatter", "name": "BIOMASS_Ec_iJO1366_WT_53p95M", "y": [0], "x": ["2017-05-03 17:10:46"]}, {"type": "scatter", "name": "BIOMASS_Ec_iJO1366_core_53p95M", "y": [0], "x": ["2017-05-03 17:10:46"]}, {"type": "scatter", "name": "BIOMASS_Ecoli_core_w_GAM", "y": [4], "x": ["2017-05-03 14:19:01"]}, {"type": "scatter", "name": "BIOMASS_Ec_iAF1260_core_59p81M", "y": [0], "x": ["2017-05-03 16:58:28"]}], {"height": 500, "width": 650, "yaxis": {"title": "Number of Blocked Biomass Precursors in Default Medium"}, "xaxis": {"tickangle": 0, "title": "Timestamp", "zeroline": true}}, {"linkText": "", "showLink": false})</script>
+                            <div id="b661b1db-a7d8-4184-9a27-178bcd024c37" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("b661b1db-a7d8-4184-9a27-178bcd024c37", [{"y": [0], "x": ["2017-05-03 16:46:47"], "name": "BIOMASS_Ecoli", "type": "scatter"}, {"y": [0], "x": ["2017-05-03 17:10:46"], "name": "BIOMASS_Ec_iJO1366_WT_53p95M", "type": "scatter"}, {"y": [0], "x": ["2017-05-03 17:10:46"], "name": "BIOMASS_Ec_iJO1366_core_53p95M", "type": "scatter"}, {"y": [4], "x": ["2017-05-03 14:19:01"], "name": "BIOMASS_Ecoli_core_w_GAM", "type": "scatter"}, {"y": [0], "x": ["2017-05-03 16:58:28"], "name": "BIOMASS_Ec_iAF1260_core_59p81M", "type": "scatter"}], {"width": 650, "height": 500, "xaxis": {"title": "Timestamp", "tickangle": 0, "zeroline": true}, "yaxis": {"title": "Number of Blocked Biomass Precursors in Default Medium"}}, {"showLink": false, "linkText": ""})</script>
                         </md-tab-body>
                     </md-tab>
                     <md-tab id="tab_3">
@@ -133,7 +139,7 @@
                            Num Open Blocked Precursors
                         </md-tab-label>
                         <md-tab-body>
-                            <div id="6fd11cbb-5f56-4015-92ab-d50dd144d5f0" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("6fd11cbb-5f56-4015-92ab-d50dd144d5f0", [{"type": "scatter", "name": "BIOMASS_Ecoli", "y": [0], "x": ["2017-05-03 16:46:47"]}, {"type": "scatter", "name": "BIOMASS_Ec_iJO1366_WT_53p95M", "y": [0], "x": ["2017-05-03 17:10:46"]}, {"type": "scatter", "name": "BIOMASS_Ec_iJO1366_core_53p95M", "y": [0], "x": ["2017-05-03 17:10:46"]}, {"type": "scatter", "name": "BIOMASS_Ecoli_core_w_GAM", "y": [4], "x": ["2017-05-03 14:19:01"]}, {"type": "scatter", "name": "BIOMASS_Ec_iAF1260_core_59p81M", "y": [0], "x": ["2017-05-03 16:58:28"]}], {"height": 500, "width": 650, "yaxis": {"title": "Number of Blocked Biomass Precursors in Complete Medium"}, "xaxis": {"tickangle": 0, "title": "Timestamp", "zeroline": true}}, {"linkText": "", "showLink": false})</script>
+                            <div id="1d04d356-8c5a-4290-bd7f-308e74be8921" style="height: 500px; width: 650px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("1d04d356-8c5a-4290-bd7f-308e74be8921", [{"y": [0], "x": ["2017-05-03 16:46:47"], "name": "BIOMASS_Ecoli", "type": "scatter"}, {"y": [0], "x": ["2017-05-03 17:10:46"], "name": "BIOMASS_Ec_iJO1366_WT_53p95M", "type": "scatter"}, {"y": [0], "x": ["2017-05-03 17:10:46"], "name": "BIOMASS_Ec_iJO1366_core_53p95M", "type": "scatter"}, {"y": [4], "x": ["2017-05-03 14:19:01"], "name": "BIOMASS_Ecoli_core_w_GAM", "type": "scatter"}, {"y": [0], "x": ["2017-05-03 16:58:28"], "name": "BIOMASS_Ec_iAF1260_core_59p81M", "type": "scatter"}], {"width": 650, "height": 500, "xaxis": {"title": "Timestamp", "tickangle": 0, "zeroline": true}, "yaxis": {"title": "Number of Blocked Biomass Precursors in Complete Medium"}}, {"showLink": false, "linkText": ""})</script>
                         </md-tab-body>
                     </md-tab>
                 </md-tabs>
